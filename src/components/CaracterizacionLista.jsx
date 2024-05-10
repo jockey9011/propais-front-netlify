@@ -199,13 +199,13 @@ export default function CaracterizacionLista() {
                   </button>
                 )}
               </ol>
-              <ol className="breadcrumb float-sm-right mr-1">
+              {/* <ol className="breadcrumb float-sm-right mr-1">
               <form onSubmit={handleSubmit}>
     <input type="file" onChange={handleFileChange} accept=".csv" />
     <button type="submit">Subir Archivo</button>
 </form>
 
-</ol>
+</ol> */}
 
               <ol className="breadcrumb float-sm-right mr-1">
                 <Link to="/agregarCaracterizacion">
