@@ -28,7 +28,7 @@ export default function Aside() {
     <>
       <aside className="main-sidebar main-sidebar-custom background-color elevation-4">
         {/* Brand Logo */}
-        <a href="../../index3.html" className="brand-link">
+        <a href="#" className="brand-link">
           <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{ opacity: '.8' }} />
           <span className="brand-text font-weight-light color-font">Impulso Local</span>
         </a>
