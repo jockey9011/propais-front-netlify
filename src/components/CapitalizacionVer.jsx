@@ -54,7 +54,7 @@ const [fileMessageBanco, setFileMessageBanco] = useState('');
       unidad: '',
       cantidad: '',
       precioUnitario: '',
-      archivos: []
+      archivosFormulacion: []
     });
     
     const [dataFromDB, setDataFromDB] = useState([]);
