@@ -1,0 +1,21 @@
+.background-color {
+  background-color: #1F3562;
+}
+
+.color-font {
+  color: white;
+}
+
+.user-panel {
+  border-bottom: 1px solid white;
+}
+
+.brand-link {
+  border-bottom: 1px solid white;
+}
+
+.boton-cerrar-sesión {
+  background-color: white;
+  color: #E61B4E;
+  border: solid 1px #E61B4E;
+}

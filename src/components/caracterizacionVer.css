@@ -1,0 +1,25 @@
+.boton_editar_campos {
+  width: 60%;
+  color: #1F3562;
+  background-color: white;
+  border: 1px solid #1F3562;
+}
+
+.boton_editar_campos:hover {
+  color: white;
+  background-color: #1F3562;
+  
+}
+
+.card-body {
+  padding: 0.5rem;
+}
+
+.contenido-central {
+  display: flex;
+  justify-content: center;
+}
+
+.fondo-azul {
+  background-color: #1F3562 !important;
+}

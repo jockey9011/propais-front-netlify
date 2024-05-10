@@ -1,0 +1,51 @@
+body {
+  font-family: 'Sora', sans-serif;
+  font-weight: 300; /* Hacer la fuente delgada */
+  font-size: 14px; /* Establecer un tamaño de fuente más pequeño */
+}
+
+input, textarea, select {
+  font-weight: 300 !important; /* Hacer la fuente delgada */
+  font-size: 15px !important; /* Establecer un tamaño de fuente más pequeño */
+}
+
+a {
+  color: #1F3562;
+}
+
+a:hover {
+  color: black;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.boton-color-rojo {
+  background-color: white;
+  color: #1F3562;
+  border: solid 1px #1F3562;
+}
+
+.boton-color-rojo:hover {
+  background-color: #1F3562;
+  color: white;
+  border: solid 1px #1F3562;
+}
+
+.nav-link:hover {
+  color: #1F3562 !important;
+
+}
+
+.nav-link.active {
+  background-color: #1F3562 !important;
+}
+
+.nav-link.active:hover {
+  color: white !important;
+}
+
+
+
+

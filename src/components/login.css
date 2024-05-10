@@ -1,0 +1,39 @@
+/* Estilo para el cuerpo */
+.fondo1 {
+  margin: 0; /* Elimina los márgenes por defecto */
+  padding: 0; /* Elimina los rellenos por defecto */
+  width: 100vw;
+  height: 100vh; /* Establece la altura del cuerpo al 100% del viewport */
+  display: flex; /* Usa flexbox para organizar los elementos */
+}
+
+/* Estilo para el contenedor del formulario */
+.login-box {
+  display: flex; /* Usa flexbox para centrar el contenido verticalmente */
+  margin: 0 auto;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-img {
+  background-image: url('../assets/img/bg-login.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.estilo {
+  width: 25vw;
+}
+
+.boton-login {
+  background-color: #E61B4E;
+  color: white;
+  border: solid 1px #E61B4E;
+}
+
+

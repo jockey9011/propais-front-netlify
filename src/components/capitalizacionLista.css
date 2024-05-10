@@ -1,0 +1,31 @@
+.button-container {
+  display: flex;
+  flex-direction: column; /* Coloca los botones uno encima del otro */
+}
+
+/* Estilos adicionales para los botones si los necesitas */
+.button-container button {
+  width: 100%; /* Ajusta el ancho de los botones al contenedor */
+}
+
+.fondo-blanco-botones {
+  color: #1F3562 !important;
+  background-color: #fff !important;
+  border: #1F3562 solid 1px !important;
+}
+
+.fondo-blanco-botones:hover {
+  color: #fff !important;
+  background-color: #1F3562 !important;
+}
+
+.fondo-azul-plan-inversion {
+  color: #fff !important;
+  background-color: #1F3562 !important;
+  border: 1px solid #1F3562 !important;
+}
+
+.fondo-azul-plan-inversion:hover {
+  color: #fff !important;
+  background-color: #0d2553 !important;
+}

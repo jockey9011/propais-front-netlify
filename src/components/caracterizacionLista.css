@@ -1,0 +1,12 @@
+.fondo-azul-emprendimiento {
+  color: #1F3562 !important;
+  background-color: #fff !important;
+  border: #1F3562 solid 1px !important;
+}
+
+.fondo-azul-emprendimiento:hover {
+  color: #fff !important;
+  background-color: #1F3562 !important;
+}
+
+
