@@ -510,7 +510,7 @@ const handleFormulationSubmit = async (e) => {
   const valorTotal = cantidad * precioUnitario;
 
   const data = {
-    relCapitalization: id,
+    relCaracterization: id,
     ...formState,
     cantidad,
     precioUnitario,
