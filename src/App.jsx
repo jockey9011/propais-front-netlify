@@ -25,15 +25,15 @@ export default function App() {
           <Routes>
             <Route exact path="/" element={<Login />} />
             <Route path="/dashboard/*" element={<PrivateRoute />} />
-            <Route path="/caracterizacion/*" element={<CaracterizacionLista />} />
-            <Route exact path="/agregarCaracterizacion/*" element={<CaracterizacionAgregar />} />
-            <Route exact path="/verCaracterizacion/:id/*" element={<CaracterizacionVer />} />
-            <Route path="/usuarios/*" element={<UsuarioLista />} />
+            <Route path="/caracterizacion" element={<CaracterizacionLista />} />
+            <Route exact path="/agregarCaracterizacion" element={<CaracterizacionAgregar />} />
+            <Route exact path="/verCaracterizacion/:id" element={<CaracterizacionVer />} />
+            <Route path="/usuarios" element={<UsuarioLista />} />
             <Route path="/editarUsuario/:id" element={<UsuarioVer />} />
-            <Route path="/agregarUsuario/*" element={<UsuarioAgregar />} />
-            <Route path="/capitalizacion/*" element={<CapitalizacionLista />} />
-            <Route exact path="/verCapitalizacion/:id/*" element={<CapitalizacionVer />} />
-            <Route path="/descarga-masiva/*" element={<DescargaMasiva />} /> 
+            <Route path="/agregarUsuario" element={<UsuarioAgregar />} />
+            <Route path="/capitalizacion" element={<CapitalizacionLista />} />
+            <Route exact path="/verCapitalizacion/:id" element={<CapitalizacionVer />} />
+            <Route path="/descarga-masiva" element={<DescargaMasiva />} /> 
           </Routes>
         </div>
         <Footer />
