@@ -512,10 +512,7 @@ const handleFormulationSubmit = async (e) => {
   // Crear el registro en la base de datos primero
   const data = {
     relCapitalization: id,
-    ...formState,
-    cantidad,
-    precioUnitario,
-    valorTotal
+    ...formState
   };
 
   try {
