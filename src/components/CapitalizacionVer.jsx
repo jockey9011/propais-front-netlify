@@ -509,14 +509,15 @@ const handleFormulationSubmit = async (e) => {
   const precioUnitario = parseFloat(formState.precioUnitario);
   const valorTotal = cantidad * precioUnitario;
 
-  // Crear el registro en la base de datos primero
   const data = {
     relCapitalization: id,
-    ...formState
+    ...formState,
+    cantidad,
+    precioUnitario,
+    valorTotal
   };
 
   try {
-    // Agregar nuevo registro
     const newFormulation = await axios.post(`https://propais-back-render.onrender.com/formulation`, data, {
       headers: {
         'Content-Type': 'application/json',
@@ -525,7 +526,6 @@ const handleFormulationSubmit = async (e) => {
     });
     console.log('New data saved', newFormulation.data);
 
-    // Luego subimos los archivos usando el ID del nuevo registro
     const formData = new FormData();
     for (let i = 0; i < archivoSeleccionado.length; i++) {
       formData.append('files', archivoSeleccionado[i]);
@@ -561,9 +561,19 @@ const handleFormulationSubmit = async (e) => {
     await fetchDataFromDB(id);
 
   } catch (error) {
-    console.error('Error:', error);
+    if (error.response) {
+      // Error con respuesta del servidor
+      console.error("Response error:", error.response.status, error.response.data);
+    } else if (error.request) {
+      // No hubo respuesta
+      console.error("No response received:", error.request);
+    } else {
+      // Error al configurar la solicitud
+      console.error("Error setting up request:", error.message);
+    }
   }
 };
+
 
 const handleFileChangeFormulacion = (e) => {
   const files = Array.from(e.target.files);
